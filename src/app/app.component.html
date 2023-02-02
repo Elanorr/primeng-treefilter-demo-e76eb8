@@ -1,0 +1,90 @@
+<div class="grid">
+  <div class="col-3">
+    <p-tree
+      [value]="files1"
+      [filter]="true"
+      selectionMode="single"
+      (onNodeExpand)="nodeExpand($event)"
+      [(selection)]="selectedFile"
+      (onNodeSelect)="nodeSelect($event)"
+      [loading]="loading"
+    >
+      <ng-template let-node pTemplate="account">
+        <div class="grid align-items-center">
+          <div class="col-11">
+            <b>{{ node.label }}</b>
+            <br />
+            <span>{{ node.phone }}</span>
+          </div>
+          <div class="col-1">
+            <i class="pi pi-pencil"></i>
+          </div>
+        </div>
+      </ng-template>
+
+      <ng-template let-node pTemplate="merchant">
+        <div class="grid align-items-center">
+          <div class="col-11">
+            <b>{{ node.label }}</b>
+            <br />
+            <span>{{ node.adress }}</span>
+            <br />
+            <span>{{ node.phone }}</span>
+          </div>
+          <div class="col-1">
+            <i class="pi pi-pencil"></i>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template let-node pTemplate="asset">
+        <div class="grid align-items-center">
+          <div class="col-11">
+            <b>{{ node.label }} - {{ node.assetId }}</b>
+          </div>
+          <div class="col-1">
+            <i class="pi pi-pencil"></i>
+          </div>
+        </div>
+      </ng-template>
+    </p-tree>
+  </div>
+  <div class="col-9">
+    <div class="card">
+      <p-tabView>
+        <p-tabPanel header="Assets">
+          <p-panel header="Online" [toggleable]="true"  [styleClass]="'mb-5'">
+            <p-accordion [multiple]="true" iconPos="end">
+              <p-accordionTab header="Merchant 1"> </p-accordionTab>
+              <p-accordionTab header="Merchant 2"> </p-accordionTab>
+            </p-accordion>
+          </p-panel>
+          <p-panel header="Print" [toggleable]="true" class="mb-5">
+            Content
+          </p-panel>
+        </p-tabPanel>
+        <p-tabPanel header="Merchant" [disabled]="true">
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci
+            velit, sed quia non numquam eius modi.
+          </p>
+        </p-tabPanel>
+        <p-tabPanel header="Account">
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque corrupti quos
+            dolores et quas molestias excepturi sint occaecati cupiditate non
+            provident, similique sunt in culpa qui officia deserunt mollitia
+            animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
+            est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+            eligendi optio cumque nihil impedit quo minus.
+          </p>
+        </p-tabPanel>
+      </p-tabView>
+    </div>
+  </div>
+</div>

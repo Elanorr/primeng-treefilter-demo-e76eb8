@@ -1,0 +1,82 @@
+{
+  "data": [
+    {
+      "label": "Online",
+      "data": "Documents Folder",
+      "expandedIcon": "pi pi-folder-open",
+      "collapsedIcon": "pi pi-folder",
+      "children": [
+        {
+          "label": "Merchant 1",
+          "data": "Work Folder",
+          "expandedIcon": "pi pi-folder-open",
+          "collapsedIcon": "pi pi-folder",
+          "children": [
+            {
+              "label": "Asset 1",
+              "icon": "pi pi-file",
+              "data": "Expenses Document"
+            },
+            {
+              "label": "Asset 2",
+              "icon": "pi pi-file",
+              "data": "Resume Document"
+            }
+          ]
+        },
+        {
+          "label": "Merchant 2",
+          "data": "Home Folder",
+          "expandedIcon": "pi pi-folder-open",
+          "collapsedIcon": "pi pi-folder",
+          "children": [
+            {
+              "label": "Asset 1",
+              "icon": "pi pi-file",
+              "data": "Invoices for this month"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Print",
+      "data": "Pictures Folder",
+      "expandedIcon": "pi pi-folder-open",
+      "collapsedIcon": "pi pi-folder",
+      "children": [
+        {
+          "label": "Merchant 1",
+          "data": "Work Folder",
+          "expandedIcon": "pi pi-folder-open",
+          "collapsedIcon": "pi pi-folder",
+          "children": [
+            {
+              "label": "Asset 1",
+              "icon": "pi pi-file",
+              "data": "Expenses Document"
+            },
+            {
+              "label": "Asset 2",
+              "icon": "pi pi-file",
+              "data": "Resume Document"
+            }
+          ]
+        },
+        {
+          "label": "Merchant 2",
+          "data": "Home Folder",
+          "expandedIcon": "pi pi-folder-open",
+          "collapsedIcon": "pi pi-folder",
+          "children": [
+            {
+              "label": "Asset 1",
+              "icon": "pi pi-file",
+              "data": "Invoices for this month"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
